@@ -13,12 +13,19 @@ export class AppComponent implements OnInit {
 
 ngOnInit(): void {
   this.projectForm = new FormGroup({
-    'projectName': new FormControl(null, Validators.required)
+    'projectName': new FormControl(null, Validators.required),
+    'email': new FormControl(null, [Validators.required, Validators.email]),
+    'projectStatus' : new FormControl('critical')
   });
 }
 
 submit(){
 console.log("Submit has been clicked");
+}
+
+onSaveProject(){
+  console.log(this.projectForm.value);
+  console.log(this.projectForm);
 }
 
 }
