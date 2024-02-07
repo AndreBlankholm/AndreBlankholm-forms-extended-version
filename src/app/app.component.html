@@ -3,13 +3,30 @@
     <div class="row">
       <form class="">
         <div class="form-group">
-          <label for="userInput">User name</label>
-          <input type="text" class="form-control"
-
-          
-          >
-        </div>
-        <button class="btn btn-primary">submit</button>
+          <label for="name">Project Name</label>
+          <input
+           type="text"
+           class="form-control"
+           id="name"
+           
+           />
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Enter Email</label>
+            <input type="email"
+            id="email"
+             class="form-control" />  
+          </div>
+          <div class="form-group">
+            <label for="status">Project status</label>
+            <select id="status" class="form-control">
+              <option value="stable">Stable</option>
+              <option value="critical">Critical</option>
+              <option value="finished">Finished</option>
+            </select>
+          </div>
+       
+        <button class="btn btn-primary" type="submit">submit</button>
       </form>
     </div>
   </div>
